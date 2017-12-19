@@ -34,7 +34,7 @@ Here's a resource for understanding how the JSON corresponds to what you see on 
 Getting Started
 - Fork and clone this repo.
 - `npm install` to install `request`
-- Define `movie.js` and an `app.js`.
+- Define `movie.js`, `app.js`, and an `env.js`.
 
 #### movie.js
 
@@ -54,10 +54,11 @@ Getting Started
 
 #### env.js
 
-- Remember the `env.js` file we made in the last lab?  Make one of those.
+- Remember the `env.js` file we made in the last lab?  Make one of those
 - Put your API key and ID inside that file
 - Export those variables with `module.exports`
 - `require` those variables inside `movie.js` and use them in your queries
+- `.gitignore` the `env.js` file
 - Make sure you test again with your key and ID somewhere safe!
 
 #### Starter Code: app.js
@@ -68,6 +69,7 @@ There is some code in `app.js` to get you started, but you will need to write `m
 
 - app.js should require your movie module
 - app.js should contain an array of movie titles
+- env.js should keep your key and ID safe
 - for each movie title, app.js should call the get() function provided by the movie module
 - the get() function should send a request to the Google Search API using the passed-in data (each movie title)
 - the get() function's request should receive the response and console.log() <b>at least one property</b> from <b>at least one search result</n> in the items array.
