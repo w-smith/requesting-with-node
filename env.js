@@ -2,10 +2,11 @@
 
 // https://stackoverflow.com/questions/1274057/how-to-make-git-forget-about-a-file-that-was-tracked-but-is-now-in-gitignore
 
-const api = "016144505224963957432:ndkflwf3wi0";
+module.exports = {
 
-module.exports = api;
+api : "016144505224963957432:ndkflwf3wi0",
 
-const key = "AIzaSyABvwQIGurrWIMwkO8ONlhKgv2kf6Xt6bg";
 
-module.exports = key;
+key : "AIzaSyABvwQIGurrWIMwkO8ONlhKgv2kf6Xt6bg",
+
+};
