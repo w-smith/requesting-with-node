@@ -1,22 +1,19 @@
-const api = require("./env");
-console.log(api);
+var imp = require('./env');
 
-
-const key = require("./env");
-console.log(key);
-
-// module.exports(); {
-
-// 	get(movieTitle); {
-
-// request("http://api.wunderground.com/api/25b9b9cdc6cb394b/conditions/q/CO/Denver.json", function (error, response, body)
-
-
-// 	}
-// }
+var request = require('request');
 
 
 
+function get(movieTitle) {
+
+request('https://www.googleapis.com/customsearch/v1?key=' + imp.key + '&cx=' + imp.id + '&q=' + movieTitle + " ", function(error, response, body){
 
 
-var request = require("request");
+var movieTitle = JSON.parse(body);
+
+});
+}
+
+
+
+module.exports = get;

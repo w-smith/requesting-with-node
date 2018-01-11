@@ -8,5 +8,4 @@ var movie = require("./movie");
 var threeFavoriteMovies = ["Heavyweights", "Gladiator", "Christmas Vacation"];
 threeFavoriteMovies.forEach(function(film){
 	movie(film);
-  // your code here
 });
